@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB103A412C2C6E6000AC69BF /* AllTheTablesSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB103A362C2C6E6000AC69BF /* AllTheTablesSDK_iOS.framework */; };
+		CB103A412C2C6E6000AC69BF /* AllTheTablesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB103A362C2C6E6000AC69BF /* AllTheTablesSDK.framework */; };
 		CB103A462C2C6E6000AC69BF /* AllTheTablesSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB103A452C2C6E6000AC69BF /* AllTheTablesSDKTests.swift */; };
 		CB103A472C2C6E6000AC69BF /* AllTheTablesSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = CB103A392C2C6E6000AC69BF /* AllTheTablesSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB103A762C2C6EED00AC69BF /* ClosureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB103A532C2C6EED00AC69BF /* ClosureService.swift */; };
@@ -37,7 +37,6 @@
 		CB103A8F2C2C6EED00AC69BF /* References.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB103A712C2C6EED00AC69BF /* References.swift */; };
 		CB103A902C2C6EED00AC69BF /* NetworkStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB103A732C2C6EED00AC69BF /* NetworkStatusService.swift */; };
 		CB103A912C2C6EED00AC69BF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB103A742C2C6EED00AC69BF /* Reachability.swift */; };
-		CB82A6AC2C2CA658009D5E9A /* AllTheTablesSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB82A6AB2C2CA658009D5E9A /* AllTheTablesSDK.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB103A362C2C6E6000AC69BF /* AllTheTablesSDK_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AllTheTablesSDK_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB103A362C2C6E6000AC69BF /* AllTheTablesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AllTheTablesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB103A392C2C6E6000AC69BF /* AllTheTablesSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllTheTablesSDK.h; sourceTree = "<group>"; };
 		CB103A402C2C6E6000AC69BF /* AllTheTablesSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllTheTablesSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB103A452C2C6E6000AC69BF /* AllTheTablesSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTheTablesSDKTests.swift; sourceTree = "<group>"; };
@@ -97,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB103A412C2C6E6000AC69BF /* AllTheTablesSDK_iOS.framework in Frameworks */,
+				CB103A412C2C6E6000AC69BF /* AllTheTablesSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +116,7 @@
 		CB103A372C2C6E6000AC69BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB103A362C2C6E6000AC69BF /* AllTheTablesSDK_iOS.framework */,
+				CB103A362C2C6E6000AC69BF /* AllTheTablesSDK.framework */,
 				CB103A402C2C6E6000AC69BF /* AllTheTablesSDKTests.xctest */,
 			);
 			name = Products;
@@ -277,9 +276,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CB103A352C2C6E6000AC69BF /* AllTheTablesSDK-iOS */ = {
+		CB103A352C2C6E6000AC69BF /* AllTheTablesSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB103A4A2C2C6E6000AC69BF /* Build configuration list for PBXNativeTarget "AllTheTablesSDK-iOS" */;
+			buildConfigurationList = CB103A4A2C2C6E6000AC69BF /* Build configuration list for PBXNativeTarget "AllTheTablesSDK" */;
 			buildPhases = (
 				CB103A312C2C6E6000AC69BF /* Headers */,
 				CB103A322C2C6E6000AC69BF /* Sources */,
@@ -290,9 +289,9 @@
 			);
 			dependencies = (
 			);
-			name = "AllTheTablesSDK-iOS";
+			name = AllTheTablesSDK;
 			productName = AllTheTablesSDK;
-			productReference = CB103A362C2C6E6000AC69BF /* AllTheTablesSDK_iOS.framework */;
+			productReference = CB103A362C2C6E6000AC69BF /* AllTheTablesSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CB103A3F2C2C6E6000AC69BF /* AllTheTablesSDKTests */ = {
@@ -344,7 +343,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB103A352C2C6E6000AC69BF /* AllTheTablesSDK-iOS */,
+				CB103A352C2C6E6000AC69BF /* AllTheTablesSDK */,
 				CB103A3F2C2C6E6000AC69BF /* AllTheTablesSDKTests */,
 			);
 		};
@@ -355,7 +354,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB82A6AC2C2CA658009D5E9A /* AllTheTablesSDK.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +413,7 @@
 /* Begin PBXTargetDependency section */
 		CB103A432C2C6E6000AC69BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB103A352C2C6E6000AC69BF /* AllTheTablesSDK-iOS */;
+			target = CB103A352C2C6E6000AC69BF /* AllTheTablesSDK */;
 			targetProxy = CB103A422C2C6E6000AC69BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -660,7 +658,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB103A4A2C2C6E6000AC69BF /* Build configuration list for PBXNativeTarget "AllTheTablesSDK-iOS" */ = {
+		CB103A4A2C2C6E6000AC69BF /* Build configuration list for PBXNativeTarget "AllTheTablesSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB103A4B2C2C6E6000AC69BF /* Debug */,

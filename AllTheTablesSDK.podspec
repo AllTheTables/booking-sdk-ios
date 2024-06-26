@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'AllTheTablesSDK'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.license = 'MIT'
   s.summary = 'All The Table Booking iOS SDK'
   s.homepage = 'https://github.com/AllTheTables'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.authors = { 'Rich Mucha' => 'rich@richappz.com' }
   
   s.ios.deployment_target = '12.0'
-  s.source_files = 'Source/**/*.{swift}'
+  s.source_files = 'Sources/**/*.{swift}'
   s.swift_versions = '5.0'
 
 end
