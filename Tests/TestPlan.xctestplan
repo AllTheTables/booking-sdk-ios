@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "FC0AAE95-A5B2-4E50-A51C-BD643794F92B",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "skippedTests" : [
+        "AllTheTablesSDKTests",
+        "FoundationExtensionTests\/testPerformanceExample()"
+      ],
+      "target" : {
+        "containerPath" : "container:AllTheTablesSDK.xcodeproj",
+        "identifier" : "CB103A3F2C2C6E6000AC69BF",
+        "name" : "Tests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CB103A412C2C6E6000AC69BF /* AllTheTablesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB103A362C2C6E6000AC69BF /* AllTheTablesSDK.framework */; };
-		CB103A462C2C6E6000AC69BF /* AllTheTablesSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB103A452C2C6E6000AC69BF /* AllTheTablesSDKTests.swift */; };
 		CB103A472C2C6E6000AC69BF /* AllTheTablesSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = CB103A392C2C6E6000AC69BF /* AllTheTablesSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB103A762C2C6EED00AC69BF /* ClosureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB103A532C2C6EED00AC69BF /* ClosureService.swift */; };
 		CB103A772C2C6EED00AC69BF /* ThreadSafeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB103A542C2C6EED00AC69BF /* ThreadSafeArray.swift */; };
@@ -37,6 +36,8 @@
 		CB103A8F2C2C6EED00AC69BF /* References.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB103A712C2C6EED00AC69BF /* References.swift */; };
 		CB103A902C2C6EED00AC69BF /* NetworkStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB103A732C2C6EED00AC69BF /* NetworkStatusService.swift */; };
 		CB103A912C2C6EED00AC69BF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB103A742C2C6EED00AC69BF /* Reachability.swift */; };
+		CBFE2DC32C2D5040009C5F69 /* FoundationExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFE2DC22C2D5040009C5F69 /* FoundationExtensionTests.swift */; };
+		CBFE2DC52C2D52D4009C5F69 /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFE2DC42C2D52D4009C5F69 /* Gateway.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,7 @@
 /* Begin PBXFileReference section */
 		CB103A362C2C6E6000AC69BF /* AllTheTablesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AllTheTablesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB103A392C2C6E6000AC69BF /* AllTheTablesSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllTheTablesSDK.h; sourceTree = "<group>"; };
-		CB103A402C2C6E6000AC69BF /* AllTheTablesSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllTheTablesSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB103A452C2C6E6000AC69BF /* AllTheTablesSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTheTablesSDKTests.swift; sourceTree = "<group>"; };
+		CB103A402C2C6E6000AC69BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB103A532C2C6EED00AC69BF /* ClosureService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureService.swift; sourceTree = "<group>"; };
 		CB103A542C2C6EED00AC69BF /* ThreadSafeArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadSafeArray.swift; sourceTree = "<group>"; };
 		CB103A562C2C6EED00AC69BF /* CoderModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoderModule.swift; sourceTree = "<group>"; };
@@ -82,6 +82,10 @@
 		CB103A732C2C6EED00AC69BF /* NetworkStatusService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStatusService.swift; sourceTree = "<group>"; };
 		CB103A742C2C6EED00AC69BF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		CB82A6AB2C2CA658009D5E9A /* AllTheTablesSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = AllTheTablesSDK.podspec; sourceTree = "<group>"; };
+		CBFE2DBD2C2CB73D009C5F69 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		CBFE2DBE2C2D4FC6009C5F69 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		CBFE2DC22C2D5040009C5F69 /* FoundationExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensionTests.swift; sourceTree = "<group>"; };
+		CBFE2DC42C2D52D4009C5F69 /* Gateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gateway.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 		CB103A2C2C2C6E6000AC69BF = {
 			isa = PBXGroup;
 			children = (
+				CBFE2DBD2C2CB73D009C5F69 /* Package.swift */,
 				CB82A6AB2C2CA658009D5E9A /* AllTheTablesSDK.podspec */,
 				CB103A502C2C6E8D00AC69BF /* Sources */,
 				CB103A442C2C6E6000AC69BF /* Tests */,
@@ -117,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				CB103A362C2C6E6000AC69BF /* AllTheTablesSDK.framework */,
-				CB103A402C2C6E6000AC69BF /* AllTheTablesSDKTests.xctest */,
+				CB103A402C2C6E6000AC69BF /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +141,10 @@
 		CB103A442C2C6E6000AC69BF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				CB103A452C2C6E6000AC69BF /* AllTheTablesSDKTests.swift */,
+				CBFE2DBE2C2D4FC6009C5F69 /* TestPlan.xctestplan */,
+				CBFE2DC12C2D5023009C5F69 /* UI */,
+				CBFE2DC02C2D501B009C5F69 /* Network */,
+				CBFE2DBF2C2D5013009C5F69 /* Foundation */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -250,6 +258,7 @@
 		CB103A922C2C6F2A00AC69BF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				CBFE2DC42C2D52D4009C5F69 /* Gateway.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -259,6 +268,28 @@
 			children = (
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		CBFE2DBF2C2D5013009C5F69 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				CBFE2DC22C2D5040009C5F69 /* FoundationExtensionTests.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		CBFE2DC02C2D501B009C5F69 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CBFE2DC12C2D5023009C5F69 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +315,7 @@
 				CB103A322C2C6E6000AC69BF /* Sources */,
 				CB103A332C2C6E6000AC69BF /* Frameworks */,
 				CB103A342C2C6E6000AC69BF /* Resources */,
+				CBFE2DC62C2D5430009C5F69 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -294,9 +326,9 @@
 			productReference = CB103A362C2C6E6000AC69BF /* AllTheTablesSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CB103A3F2C2C6E6000AC69BF /* AllTheTablesSDKTests */ = {
+		CB103A3F2C2C6E6000AC69BF /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB103A4D2C2C6E6000AC69BF /* Build configuration list for PBXNativeTarget "AllTheTablesSDKTests" */;
+			buildConfigurationList = CB103A4D2C2C6E6000AC69BF /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				CB103A3C2C2C6E6000AC69BF /* Sources */,
 				CB103A3D2C2C6E6000AC69BF /* Frameworks */,
@@ -307,9 +339,9 @@
 			dependencies = (
 				CB103A432C2C6E6000AC69BF /* PBXTargetDependency */,
 			);
-			name = AllTheTablesSDKTests;
+			name = Tests;
 			productName = AllTheTablesSDKTests;
-			productReference = CB103A402C2C6E6000AC69BF /* AllTheTablesSDKTests.xctest */;
+			productReference = CB103A402C2C6E6000AC69BF /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -344,7 +376,7 @@
 			projectRoot = "";
 			targets = (
 				CB103A352C2C6E6000AC69BF /* AllTheTablesSDK */,
-				CB103A3F2C2C6E6000AC69BF /* AllTheTablesSDKTests */,
+				CB103A3F2C2C6E6000AC69BF /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -365,6 +397,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CBFE2DC62C2D5430009C5F69 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB103A322C2C6E6000AC69BF /* Sources */ = {
@@ -393,6 +447,7 @@
 				CB103A872C2C6EED00AC69BF /* FileManager+Extension.swift in Sources */,
 				CB103A842C2C6EED00AC69BF /* DateFormatter+Extension.swift in Sources */,
 				CB103A802C2C6EED00AC69BF /* Request.swift in Sources */,
+				CBFE2DC52C2D52D4009C5F69 /* Gateway.swift in Sources */,
 				CB103A762C2C6EED00AC69BF /* ClosureService.swift in Sources */,
 				CB103A782C2C6EED00AC69BF /* CoderModule.swift in Sources */,
 				CB103A8F2C2C6EED00AC69BF /* References.swift in Sources */,
@@ -404,7 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB103A462C2C6E6000AC69BF /* AllTheTablesSDKTests.swift in Sources */,
+				CBFE2DC32C2D5040009C5F69 /* FoundationExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +611,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -590,6 +646,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -667,7 +724,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB103A4D2C2C6E6000AC69BF /* Build configuration list for PBXNativeTarget "AllTheTablesSDKTests" */ = {
+		CB103A4D2C2C6E6000AC69BF /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB103A4E2C2C6E6000AC69BF /* Debug */,

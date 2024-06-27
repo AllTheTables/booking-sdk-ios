@@ -1,0 +1,22 @@
+# rule identifiers to exclude from running
+disabled_rules:
+    - trailing_whitespace
+    - identifier_name
+    - type_name
+    - function_parameter_count
+    - shorthand_operator
+    - type_body_length
+
+# parameterized rules can be customized from this configuration file
+line_length: 220
+file_length: 800
+function_body_length: 110
+
+indentation: 2
+
+custom_rules:
+    no_objcMembers:
+        name: "@objcMembers"
+        regex: "@objcMembers"
+        message: "Explicitly use @objc on each member you want to expose to Objective-C"
+        severity: error
