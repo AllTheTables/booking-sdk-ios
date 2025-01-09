@@ -28,27 +28,29 @@ public class Gateway: Service {
     /**
      Appends a `GatewayObserver` delegate to the Singleton store
      */
-    public class func startObserving(_ observer: GatewayObserver) {
-        let obs = _GatewayObserver(observer: observer)
-        observers.append(obs)
-    }
+    public class func startObserving(
+        _ observer: GatewayObserver) {
+            let obs = _GatewayObserver(observer: observer)
+            observers.append(obs)
+        }
     
     /**
      Removes a `GatewayObserver` delegate from the Singleton store
      */
-    public class func stopObserving(_ observer: GatewayObserver) {
-        var idx: Int?
-        for (i, wrapper) in observers.enumerated() {
-            if wrapper.isValid && wrapper.observer === observer {
-                idx = i
-                break
+    public class func stopObserving(
+        _ observer: GatewayObserver) {
+            var idx: Int?
+            for (i, wrapper) in observers.enumerated() {
+                if wrapper.isValid && wrapper.observer === observer {
+                    idx = i
+                    break
+                }
+            }
+            
+            if let index = idx {
+                observers.remove(at: index)
             }
         }
-        
-        if let index = idx {
-            observers.remove(at: index)
-        }
-    }
     
     // ==========================================
     // MARK: Properties
@@ -60,7 +62,12 @@ public class Gateway: Service {
     public var rootURL = ""
     
     public var headers: [String: String] = [
-        "x-app-version": Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String) as? String ?? "",
+//        "x-api-key": AllTheTablesService.apiKey ?? "",
+        "x-partner-id": AllTheTablesService.partnerId ?? "",
+        "x-public-key": AllTheTablesService.publicKey ?? "",
+        "x-app-version": Bundle.main.object(
+            forInfoDictionaryKey: kCFBundleVersionKey as String
+        ) as? String ?? "",
         "x-device-manufacturer": "Apple",
         "x-device-name": UIDevice.current.name,
         "x-device-os": UIDevice.current.systemVersion,
